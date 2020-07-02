@@ -26,7 +26,7 @@ public class test {
 
     @GetMapping("/test")
     public void test()  {
-        throw new HttpException(10001,"请求出错");
+        throw new HttpException(10001,"请求出错111");
     }
 
 
