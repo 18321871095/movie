@@ -3,6 +3,7 @@ package com.jh.movie.test;
 import java.io.*;
 import java.lang.ref.SoftReference;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
@@ -18,6 +19,7 @@ public class testThread  {
         ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
         ReentrantReadWriteLock.ReadLock readLock = reentrantReadWriteLock.readLock();
         ReentrantReadWriteLock.WriteLock writeLock = reentrantReadWriteLock.writeLock();
+
         new Thread(new Runnable() {
             @Override
             public void run() {
