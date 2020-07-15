@@ -21,6 +21,11 @@ import java.util.Map;
 public class test {
     private static Logger logger= LoggerFactory.getLogger(test.class);
 
+    @GetMapping("/swagger")
+    public String swagger()  {
+        return "swagger";
+
+    }
 
 
 
